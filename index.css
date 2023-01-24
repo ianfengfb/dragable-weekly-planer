@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,800');
+
+.page_container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_background {
+    background-color: #edebeb;
+}
+
+.page_title {
+    font-size: 1.75rem;
+}
+
+.section_title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #999;
+}
+
+.hr_container {
+    width: 100%;
+}
+
+.planner_container {
+    width: 100%;
+}
+
+.adder {
+    position: relative;
+    height: 3rem;
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+    /* border: solid red 1px; */
+}
+
+::-webkit-input-placeholder {
+    color: #cecece;
+}
+
+.date {
+    will-change: transform;
+    font-family: Raleway;
+    font-weight: 800;
+}
+
+.input {
+    outline: none;
+    border: 1px solid #3d3939;
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 16px;
+    /* margin-left: -5px; */
+}
+
+.add {
+    position: absolute;
+    right: 0;
+    top: -0.25rem;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s;
+    color: #3d3939;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+/* .add:hover{
+        transform: rotate(360deg);
+      } */
+
+.draggable {
+    will-change: transform;
+    font-family: Raleway;
+    font-weight: 800;
+    height: 50px;
+    list-style-type: none;
+    margin: 10px;
+    color: white;
+    width: 250px;
+    line-height: 3.2;
+    padding-left: 10px;
+    cursor: move;
+    transition: all 200ms;
+    user-select: none;
+    margin: 10px auto;
+    position: relative;
+}
+
+.list_check {
+    opacity: 0;
+}
+
+.draggable:hover .list_check {
+    opacity: 1;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.draggable_red {
+    background-color: red;
+}
+
+.draggable_blue {
+    background-color: blue;
+}
+
+.draggable_green {
+    background-color: green;
+}
+
+.draggable_grey {
+    background-color: grey;
+    text-decoration: line-through;
+}
+
+
+.over {
+    transform: scale(1.1, 1.1);
+}
+
+.lists_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_task_red {
+    height: 2rem;
+    background: red;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: 0.2s;
+}
+
+.add_task_red:hover {
+    transform: scale(1.05);
+}
+
+.add_task_green {
+    height: 2rem;
+    background: green;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: 0.2s;
+}
+
+.add_task_green:hover {
+    transform: scale(1.05);
+}
+
+.add_task_blue {
+    height: 2rem;
+    background: blue;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add_task_blue:hover {
+    transform: scale(1.05);
+}
